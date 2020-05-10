@@ -9,5 +9,5 @@ Assurez-vous d'avoir bien installer npm, puis importé le projet dans votre edit
 Lancer le serveur via la commande 'ng serve' dans le terminal. Entrer l'url suivant dans votre navigateur 'http://localhost:4200/'.
 
 ## Auteurs
-Yannick ETCHE
+Yannick ETCHE <br>
 Patrick MENAN
