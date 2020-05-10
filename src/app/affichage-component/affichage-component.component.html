@@ -1,0 +1,19 @@
+<ul *ngFor = "let pokemon of (listePokemon | filterPokemonPipe : 'name' : pokemonRecherche)">
+    <h3> Photo </h3>
+    <tr>
+        <td *ngFor = "let logo of pokemon.logo"> 
+            <img src = {{logo}}/>
+        </td>
+    </tr>
+    <h3> Informations Pokemon </h3>
+    <li>
+        Name : {{pokemon.name}}
+    </li>
+    <li>
+        id : {{pokemon.id}}
+    </li>
+    <h3> Statistique </h3>
+    <li *ngFor = "let stat of pokemon.stats">
+        {{stat}}
+    </li>
+</ul>

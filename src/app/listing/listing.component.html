@@ -1,0 +1,14 @@
+<p>
+<!--
+    Id
+    <input type = "text" id = "numero" [(ngModel)] = "numero"> 
+-->
+    Nom
+    <input type = "text" [(ngModel)] = "select">
+</p>
+<p>
+    <select [(ngModel)] = "select">
+        <option *ngFor = "let pokemon of (listePokemon | filterPokemonPipe : 'name' : filtre)"> {{pokemon.name}} </option>
+    </select>
+    <button (click) = "selectPokemon(select)" routerLink = "affichage"> Get </button>
+</p>
